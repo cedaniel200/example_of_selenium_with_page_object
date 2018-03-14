@@ -21,7 +21,7 @@ public class WebDriverFactory {
 	
 	private static void createWebDriverIfNull(int timeout) {
 		if(driver == null) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\cesar.meneses\\Downloads\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "<< here place the path where chromedriver.exe is located >>");
 	        driver = new ChromeDriver();
 	        driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 		}
