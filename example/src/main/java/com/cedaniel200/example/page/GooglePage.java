@@ -26,8 +26,9 @@ public class GooglePage extends PageBase {
 		searchField.sendKeys(searchTerm);
 	}
 	
-	public void clickOnGoogleSearch() {
+	public GoogleResultsPage clickOnGoogleSearch() {
 		googleSearchButton.click();
+		return new GoogleResultsPage(driver);
 	}
 
 }
